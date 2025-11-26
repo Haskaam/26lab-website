@@ -1,0 +1,25 @@
+.mh {
+    text-align: center;
+    color:#00df82;
+    font-weight: 600;
+}
+
+.mt {
+    text-align: center;
+    color: #00df82;
+    font-weight: 600;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.table {
+    text-align: center;
+    font-size: 18px;
+}
+
+.highlight {
+    color: #00df82;
+}

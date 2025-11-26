@@ -1,0 +1,98 @@
+.hero {
+  background-color: #03624c;
+  padding: 60px 0;
+}
+
+.choice-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.choice {
+  background-color: #0f1f1c; 
+  color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 20px; 
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  min-width: 240px;
+  border: 2px solid #0c0c0c; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.choice:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 223, 130, 0.4);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.karta {
+  background-color: #0f1f1c;
+  border: 2px solid #0c0c0c;
+  padding: 40px;
+  border-radius: 30px;
+  color: white;
+  width: 370px;
+  height: 400px;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+.karta:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 0 20px #00df82;
+  background-color: #041818;
+}
+
+.karta li {
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+.karta li::before {
+  content: '✔ ';
+  color: #00df82;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0; 
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.karta.fade-in {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.highlight {
+  color: #00df82;
+  font-weight: 600;
+}
+
+.bluehighlight {
+  color: #00bfff;
+  font-weight: 600;
+}
+
+.sectionfooter {
+  text-align: center;
+  transform: translateY(20px);
+}
